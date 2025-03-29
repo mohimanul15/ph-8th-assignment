@@ -21,7 +21,6 @@ const Header = ({colorPalete = 'black'}) => {
         setMainPalete(colorPalete);
     },[])
     
-    console.log(mainPalete);
     const menuList = <>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/statistics'>Statistics</NavLink>
