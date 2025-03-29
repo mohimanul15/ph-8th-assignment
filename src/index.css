@@ -5,4 +5,9 @@
 @theme{
     --font-display: "Sora","sans-serif";
     --font-sora: "Sora", sans-serif;
+    --color-main: #9538E2;
+}
+
+button{
+    cursor: pointer;
 }

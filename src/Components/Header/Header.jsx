@@ -5,9 +5,9 @@ import { IoClose } from "react-icons/io5";
 import './Header.css';
 import { IoCartOutline } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const Header = () => {
+const Header = ({colorPalete = 'black'}) => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -15,20 +15,29 @@ const Header = () => {
         setIsOpen(!isOpen);
     }
 
+    const [mainPalete, setMainPalete] = useState(colorPalete);
+
+    useEffect(()=>{
+        setMainPalete(colorPalete);
+    },[])
+    
+    console.log(mainPalete);
     const menuList = <>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/statistics'>Statistics</NavLink>
         <NavLink to='/dashboard'>Dashboard</NavLink>
     </>
 
+
+
     return (
-        <header>
+        <header className={`text-${mainPalete}`}>
             <div className='flex items-center justify-between container mx-auto'>
                 <div className='flex items-center justify-center gap-1 flex-1/3'>
                     <img
                         src={mainLogo}
                         alt="Website Logo"
-                        className='max-w-24 md:max-w-32' />
+                        className='max-w-24 md:max-w-32 mix-blend-multiply' />
 
                     <h2
                         className='font-bold text-base max-sm:hidden md:text-xl'>
@@ -54,12 +63,12 @@ const Header = () => {
                     </div>
 
                     <div className='flex items-center justify-center gap-3'>
-                        <div className='flex justify-center items-center w-8 h-8 relative outline-1 outline-gray-800 rounded-full'>
+                        <div className={`flex justify-center items-center w-8 h-8 relative outline-1 outline-${colorPalete=== 'black'?'gray-800':colorPalete} rounded-full`}>
                             <FaHeart className='w-5 h-auto'></FaHeart>
                             <p className='absolute -top-2 -right-1.5 text-lg font-bold text-amber-500'>3</p>
                         </div>
 
-                        <div className='flex justify-center items-center w-8 h-8 relative outline-1 outline-gray-800 rounded-full'>
+                        <div className={`flex justify-center items-center w-8 h-8 relative outline-1 outline-${colorPalete=== 'black'?'gray-800':colorPalete} rounded-full`}>
                             <IoCartOutline className='w-5 h-auto'></IoCartOutline>
                             <p className='absolute -top-2 -right-1.5 text-lg font-bold text-amber-500'>2</p>
                         </div>
