@@ -37,7 +37,7 @@
       {
         "product_id": "HPELI-13-003",
         "product_title": "HP EliteBook x360 13\" 2-in-1 Laptop",
-        "product_image": "hp-elitebook-x360.jpg",
+        "product_image": "./src/assets/hp-elitebook-x360.webp",
         "category": "Computers",
         "price": 1299.00,
         "description": "Convertible business laptop with long battery life.",
@@ -54,7 +54,7 @@
       {
         "product_id": "LENLEG-7-004",
         "product_title": "Lenovo Legion 7 Gaming Laptop",
-        "product_image": "lenovo-legion-7.jpg",
+        "product_image": "./src/assets/lenovo-legion-7.webp",
         "category": "Computers",
         "price": 1999.00,
         "description": "High-performance gaming laptop with RGB keyboard.",
@@ -71,7 +71,7 @@
       {
         "product_id": "ASUSZ-14-005",
         "product_title": "ASUS ZenBook 14 OLED",
-        "product_image": "asus-zenbook-14.jpg",
+        "product_image": "./src/assets/asus-zenbook-14.png",
         "category": "Computers",
         "price": 1099.00,
         "description": "Ultra-thin laptop with vibrant OLED display.",
@@ -88,7 +88,7 @@
       {
         "product_id": "ACERSW-5-006",
         "product_title": "Acer Swift 5 (2024)",
-        "product_image": "acer-swift-5.jpg",
+        "product_image": "./src/assets/acer-swift-5.png",
         "category": "Computers",
         "price": 999.00,
         "description": "Lightweight laptop with magnesium-aluminum chassis.",

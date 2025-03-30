@@ -32,8 +32,7 @@ const Products = () => {
 
             <div className="mt-8 flex gap-5">
 
-                <div
-                    className="max-h-fit p-2 md:p-6 bg-white rounded-2xl flex flex-col gap-5 flex-1/5">
+                <div className="max-h-fit p-2 md:p-6 bg-white rounded-2xl flex flex-col gap-5 flex-1/3 lg:flex-1/5">
 
                     <button className="bg-[#09080F15] text-[#09080FAA] px-7 py-4 text-left font-medium text-sm md:text-lg rounded-4xl min-w-full">
                         All Products
@@ -47,7 +46,7 @@ const Products = () => {
 
                 </div>
 
-                <div className="flex-4/5 grid grid-cols-3 gap-6">
+                <div className="flex-2/3 lg:flex-4/5 grid grid-cols-2 lg:grid-cols-3 gap-6">
 
                     {
                         value.map((singleProd,idk) => {
