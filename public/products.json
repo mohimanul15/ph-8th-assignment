@@ -1,0 +1,477 @@
+{
+    "products": [
+      {
+        "product_id": "MBPM3-14-001",
+        "product_title": "Apple MacBook Pro 14\" M3 Chip 512GB SSD",
+        "product_image": "./src/assets/macbook-pro-m3-14.png",
+        "category": "Computers",
+        "price": 1599.00,
+        "description": "Professional laptop with M3 chip and Liquid Retina XDR display.",
+        "specification": {
+          "chip": "Apple M3 (8-core CPU, 10-core GPU)",
+          "ram": "16GB",
+          "storage": "512GB SSD",
+          "display": "14.2\" Liquid Retina XDR (3024x1964)",
+          "ports": "Thunderbolt 4 (x3), HDMI, SDXC slot"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "DEXPS15-2024-002",
+        "product_title": "Dell XPS 15 Laptop – 12th Gen Intel i7, 4K Touchscreen",
+        "product_image": "./src/assets/dell-xps-15-2024.jpg",
+        "category": "Computers",
+        "price": 1799.00,
+        "description": "Sleek design with InfinityEdge display and NVIDIA RTX GPU.",
+        "specification": {
+          "cpu": "Intel Core i7-12700H",
+          "gpu": "NVIDIA RTX 3050 Ti",
+          "ram": "32GB DDR5",
+          "storage": "1TB NVMe SSD",
+          "display": "15.6\" 4K UHD+ (3840x2400) Touch"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "HPELI-13-003",
+        "product_title": "HP EliteBook x360 13\" 2-in-1 Laptop",
+        "product_image": "hp-elitebook-x360.jpg",
+        "category": "Computers",
+        "price": 1299.00,
+        "description": "Convertible business laptop with long battery life.",
+        "specification": {
+          "cpu": "Intel Core i5-1235U",
+          "ram": "16GB",
+          "storage": "512GB SSD",
+          "display": "13.3\" FHD (1920x1080) Touch",
+          "weight": "2.8 lbs"
+        },
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "LENLEG-7-004",
+        "product_title": "Lenovo Legion 7 Gaming Laptop",
+        "product_image": "lenovo-legion-7.jpg",
+        "category": "Computers",
+        "price": 1999.00,
+        "description": "High-performance gaming laptop with RGB keyboard.",
+        "specification": {
+          "cpu": "AMD Ryzen 9 7945HX",
+          "gpu": "NVIDIA RTX 4080",
+          "ram": "32GB DDR5",
+          "storage": "2TB NVMe SSD",
+          "display": "16\" QHD+ (2560x1600) 240Hz"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "ASUSZ-14-005",
+        "product_title": "ASUS ZenBook 14 OLED",
+        "product_image": "asus-zenbook-14.jpg",
+        "category": "Computers",
+        "price": 1099.00,
+        "description": "Ultra-thin laptop with vibrant OLED display.",
+        "specification": {
+          "cpu": "Intel Core i7-1260P",
+          "ram": "16GB",
+          "storage": "1TB SSD",
+          "display": "14\" OLED (2880x1800)",
+          "weight": "2.6 lbs"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "ACERSW-5-006",
+        "product_title": "Acer Swift 5 (2024)",
+        "product_image": "acer-swift-5.jpg",
+        "category": "Computers",
+        "price": 999.00,
+        "description": "Lightweight laptop with magnesium-aluminum chassis.",
+        "specification": {
+          "cpu": "Intel Core i5-1240P",
+          "ram": "8GB",
+          "storage": "512GB SSD",
+          "display": "14\" FHD (1920x1080)",
+          "weight": "2.3 lbs"
+        },
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "SGS24U-256-007",
+        "product_title": "Samsung Galaxy S24 Ultra (256GB, Titanium Black)",
+        "product_image": "s24-ultra-black.jpg",
+        "category": "Phones",
+        "price": 1299.99,
+        "description": "Flagship phone with 200MP camera and Snapdragon 8 Gen 3.",
+        "specification": {
+          "display": "6.8\" Dynamic AMOLED 2X (1440x3088)",
+          "chipset": "Snapdragon 8 Gen 3",
+          "ram": "12GB",
+          "storage": "256GB",
+          "battery": "5000mAh (45W fast charging)"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "IP15PM-1TB-008",
+        "product_title": "iPhone 15 Pro Max (1TB, Titanium)",
+        "product_image": "iphone15-pro-max.jpg",
+        "category": "Phones",
+        "price": 1599.00,
+        "description": "ProMotion display, A17 Pro chip, and titanium body.",
+        "specification": {
+          "display": "6.7\" Super Retina XDR (1290x2796)",
+          "chip": "A17 Pro",
+          "ram": "8GB",
+          "storage": "1TB",
+          "battery": "4422mAh (27W fast charging)"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "ONEPL11-009",
+        "product_title": "OnePlus 11 5G (256GB, Black)",
+        "product_image": "oneplus-11.jpg",
+        "category": "Phones",
+        "price": 699.00,
+        "description": "Flagship killer with Hasselblad camera and 100W charging.",
+        "specification": {
+          "display": "6.7\" AMOLED (1440x3216) 120Hz",
+          "chipset": "Snapdragon 8 Gen 2",
+          "ram": "16GB",
+          "storage": "256GB",
+          "battery": "5000mAh (100W SuperVOOC)"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "PIXEL8P-010",
+        "product_title": "Google Pixel 8 Pro (256GB, Obsidian)",
+        "product_image": "pixel-8-pro.jpg",
+        "category": "Phones",
+        "price": 999.00,
+        "description": "AI-powered camera and Tensor G3 chip.",
+        "specification": {
+          "display": "6.7\" LTPO OLED (1344x2992) 120Hz",
+          "chipset": "Google Tensor G3",
+          "ram": "12GB",
+          "storage": "256GB",
+          "battery": "5050mAh (30W wired)"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "XIAOMI14-011",
+        "product_title": "Xiaomi 14 Ultra (512GB, Ceramic White)",
+        "product_image": "xiaomi-14-ultra.jpg",
+        "category": "Phones",
+        "price": 1199.00,
+        "description": "Leica co-engineered camera with Snapdragon 8 Gen 3.",
+        "specification": {
+          "display": "6.73\" AMOLED (1440x3200) 120Hz",
+          "chipset": "Snapdragon 8 Gen 3",
+          "ram": "16GB",
+          "storage": "512GB",
+          "battery": "5300mAh (90W HyperCharge)"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "MOTORAZR-012",
+        "product_title": "Motorola Razr+ (2024, 256GB)",
+        "product_image": "motorola-razr-plus.jpg",
+        "category": "Phones",
+        "price": 999.00,
+        "description": "Foldable phone with 3.6\" external AMOLED display.",
+        "specification": {
+          "display": "6.9\" FHD+ (1080x2640) Foldable LTPO",
+          "chipset": "Snapdragon 8+ Gen 1",
+          "ram": "12GB",
+          "storage": "256GB",
+          "battery": "3800mAh (30W TurboPower)"
+        },
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "GWA5-45MM-013",
+        "product_title": "Samsung Galaxy Watch5 Pro (45mm, LTE)",
+        "product_image": "galaxy-watch5-pro.jpg",
+        "category": "Smart Watches",
+        "price": 449.99,
+        "description": "Premium smartwatch with sapphire glass and body composition analysis.",
+        "specification": {
+          "display": "1.4\" AMOLED (450x450)",
+          "os": "Wear OS",
+          "battery": "590mAh (2-day life)",
+          "features": "GPS, ECG, Blood Pressure Monitor"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "APWU-45MM-014",
+        "product_title": "Apple Watch Ultra 2 (49mm, Titanium)",
+        "product_image": "apple-watch-ultra-2.jpg",
+        "category": "Smart Watches",
+        "price": 799.00,
+        "description": "Rugged smartwatch with dive-ready features and S9 chip.",
+        "specification": {
+          "display": "1.92\" LTPO OLED (502x410)",
+          "os": "watchOS 10",
+          "battery": "542mAh (36-hour life)",
+          "features": "Depth Gauge, Dual GPS, Action Button"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "FITBIT-8-015",
+        "product_title": "Fitbit Sense 2 (Advanced Health Tracking)",
+        "product_image": "fitbit-sense-2.jpg",
+        "category": "Smart Watches",
+        "price": 299.95,
+        "description": "Health-focused watch with stress management tools.",
+        "specification": {
+          "display": "1.58\" AMOLED (336x336)",
+          "os": "Fitbit OS",
+          "battery": "6-day life",
+          "features": "EDA Sensor, Skin Temperature, SpO2"
+        },
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "product_id": "GARMIN-965-016",
+        "product_title": "Garmin Forerunner 965 (Multisport GPS)",
+        "product_image": "garmin-965.jpg",
+        "category": "Smart Watches",
+        "price": 599.99,
+        "description": "Premium running watch with AMOLED display and maps.",
+        "specification": {
+          "display": "1.4\" AMOLED (454x454)",
+          "battery": "31-day life (smartwatch mode)",
+          "features": "HRV Status, Running Power, Music Storage"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "AMZFAL-6-017",
+        "product_title": "Amazfit Falcon (Titanium, Rugged)",
+        "product_image": "amazfit-falcon.jpg",
+        "category": "Smart Watches",
+        "price": 499.99,
+        "description": "Ultra-durable watch with dual-band GPS and 14-day battery.",
+        "specification": {
+          "display": "1.28\" AMOLED (416x416)",
+          "os": "Zepp OS",
+          "battery": "500mAh (14-day life)",
+          "features": "100m Waterproof, Sapphire Glass"
+        },
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "TICW5-018",
+        "product_title": "TicWatch Pro 5 (Google Wear OS)",
+        "product_image": "ticwatch-pro-5.jpg",
+        "category": "Smart Watches",
+        "price": 349.99,
+        "description": "Dual-layer display with Snapdragon W5+ Gen 1 chip.",
+        "specification": {
+          "display": "1.43\" AMOLED (466x466) + FSTN",
+          "os": "Wear OS 3",
+          "battery": "628mAh (3-day life)",
+          "features": "Rotating Crown, 2GB RAM"
+        },
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "APWU-30W-019",
+        "product_title": "Anker 30W USB-C Fast Charger",
+        "product_image": "anker-30w-charger.jpg",
+        "category": "Chargers",
+        "price": 19.99,
+        "description": "Compact GaN charger for phones and laptops.",
+        "specification": {
+          "output": "30W USB-C PD",
+          "compatibility": "iPhone, Samsung, MacBook Air"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "APWU-140W-020",
+        "product_title": "Apple 140W USB-C Power Adapter",
+        "product_image": "apple-140w-charger.jpg",
+        "category": "Chargers",
+        "price": 99.00,
+        "description": "Fast charging for MacBook Pro 16\" with MagSafe.",
+        "specification": {
+          "output": "140W USB-C PD",
+          "compatibility": "MacBook Pro 14/16\", iPhone 15 Pro Max"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "SAM-45W-021",
+        "product_title": "Samsung 45W Super Fast Charger",
+        "product_image": "samsung-45w-charger.jpg",
+        "category": "Chargers",
+        "price": 49.99,
+        "description": "PPS-enabled charger for Galaxy S24 Ultra and laptops.",
+        "specification": {
+          "output": "45W USB-C PD 3.0",
+          "compatibility": "Galaxy S24, Note 20, Tab S8"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "UGREEN-100W-022",
+        "product_title": "UGREEN 100W 4-Port GaN Charger",
+        "product_image": "ugreen-100w-charger.jpg",
+        "category": "Chargers",
+        "price": 79.99,
+        "description": "Charge 4 devices simultaneously with GaN tech.",
+        "specification": {
+          "output": "100W total (2x USB-C, 2x USB-A)",
+          "ports": "USB-C (100W PD), USB-A (18W)"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "BELKIN-3IN1-023",
+        "product_title": "Belkin 3-in-1 Wireless Charger (MagSafe)",
+        "product_image": "belkin-3in1-magsafe.jpg",
+        "category": "Chargers",
+        "price": 149.95,
+        "description": "Charge iPhone, AirPods, and Apple Watch together.",
+        "specification": {
+          "output": "15W (MagSafe), 5W (Watch/AirPods)",
+          "compatibility": "iPhone 12+ , Apple Watch, AirPods"
+        },
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "RAV-65W-024",
+        "product_title": "RAVPower 65W GaN Wall Charger",
+        "product_image": "ravpower-65w-gan.jpg",
+        "category": "Chargers",
+        "price": 39.99,
+        "description": "Ultra-compact charger for laptops and phones.",
+        "specification": {
+          "output": "65W USB-C PD",
+          "weight": "100g"
+        },
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "PBANK-20K-025",
+        "product_title": "RAVPower 20000mAh Power Bank",
+        "product_image": "ravpower-20000mah.jpg",
+        "category": "Power Banks",
+        "price": 49.99,
+        "description": "High-capacity power bank with 18W PD charging.",
+        "specification": {
+          "capacity": "20000mAh",
+          "outputs": "USB-C (18W PD), USB-A (15W)",
+          "input": "USB-C (20W)"
+        },
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "ANKE-PD-026",
+        "product_title": "Anker 737 PowerCore 24K (140W)",
+        "product_image": "anker-737-powercore.jpg",
+        "category": "Power Banks",
+        "price": 179.99,
+        "description": "Massive power bank to charge a laptop 1.5 times.",
+        "specification": {
+          "capacity": "24000mAh",
+          "outputs": "USB-C (140W PD), USB-A (22.5W)",
+          "input": "USB-C (100W)"
+        },
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "MI-50W-027",
+        "product_title": "Xiaomi 50W Power Bank 10000mAh",
+        "product_image": "xiaomi-50w-powerbank.jpg",
+        "category": "Power Banks",
+        "price": 59.99,
+        "description": "Compact power bank with 50W fast charging.",
+        "specification": {
+          "capacity": "10000mAh",
+          "outputs": "USB-C (50W PD), USB-A (18W)",
+          "input": "USB-C (45W)"
+        },
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "ZENDURE-027",
+        "product_title": "Zendure SuperTank Pro (100W, 26800mAh)",
+        "product_image": "zendure-supertank.jpg",
+        "category": "Power Banks",
+        "price": 199.99,
+        "description": "Airplane-approved power bank with digital display.",
+        "specification": {
+          "capacity": "26800mAh",
+          "outputs": "2x USB-C (100W PD), 2x USB-A (18W)",
+          "input": "USB-C (100W)"
+        },
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "BELKIN-10K-028",
+        "product_title": "Belkin 10000mAh Wireless Power Bank",
+        "product_image": "belkin-wireless-powerbank.jpg",
+        "category": "Power Banks",
+        "price": 69.99,
+        "description": "10W Qi wireless charging + 18W wired.",
+        "specification": {
+          "capacity": "10000mAh",
+          "outputs": "USB-C (18W PD), Qi (10W)",
+          "input": "USB-C (18W)"
+        },
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "ECOFLOW-029",
+        "product_title": "EcoFlow 72000mAh Portable Power Station",
+        "product_image": "ecoflow-72000mah.jpg",
+        "category": "Power Banks",
+        "price": 499.99,
+        "description": "Solar-compatible power station for outdoor use.",
+        "specification": {
+          "capacity": "72000mAh (256Wh)",
+          "outputs": "AC (300W), USB-C (100W), USB-A (18W)",
+          "input": "Solar/AC (200W)"
+        },
+        "availability": true,
+        "rating": 4.7
+      }
+    ]
+  }

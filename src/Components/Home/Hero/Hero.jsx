@@ -7,7 +7,7 @@ const Hero = () => {
 
     return (
         <>
-            <div className="bg-main rounded-4xl shadow-2xl shadow-main m-2 container mx-auto pb-30 md:pb-55">
+            <div className="bg-main rounded-4xl shadow-2xl shadow-main m-2 mt-0 container mx-auto pb-30 md:pb-55">
                 <Header colorPalete={'white'}></Header>
 
                 <div className="flex items-center justify-center py-10 gap-6 flex-col max-w-6xl px-4 text-center mx-auto">
