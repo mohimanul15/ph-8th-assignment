@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useTitle from "./Utilities/CustomHook/useTitle";
 import Header from "./Components/Header/Header";
 import { Outlet, useLocation, useNavigate, useNavigation } from "react-router";
@@ -6,6 +6,7 @@ import { Outlet, useLocation, useNavigate, useNavigation } from "react-router";
 function App() {
 
   const [title, setTitle] = useTitle('Gadget Heaven Home');
+
 
   return (
     <>

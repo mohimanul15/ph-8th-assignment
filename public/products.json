@@ -105,7 +105,7 @@
       {
         "product_id": "SGS24U-256-007",
         "product_title": "Samsung Galaxy S24 Ultra (256GB, Titanium Black)",
-        "product_image": "s24-ultra-black.jpg",
+        "product_image": "./src/assets/s24-ultra-black.jpeg",
         "category": "Phones",
         "price": 1299.99,
         "description": "Flagship phone with 200MP camera and Snapdragon 8 Gen 3.",
@@ -122,7 +122,7 @@
       {
         "product_id": "IP15PM-1TB-008",
         "product_title": "iPhone 15 Pro Max (1TB, Titanium)",
-        "product_image": "iphone15-pro-max.jpg",
+        "product_image": "./src/assets/iphone15-pro-max.jpg",
         "category": "Phones",
         "price": 1599.00,
         "description": "ProMotion display, A17 Pro chip, and titanium body.",
@@ -139,7 +139,7 @@
       {
         "product_id": "ONEPL11-009",
         "product_title": "OnePlus 11 5G (256GB, Black)",
-        "product_image": "oneplus-11.jpg",
+        "product_image": "./src/assets/oneplus-11.webp",
         "category": "Phones",
         "price": 699.00,
         "description": "Flagship killer with Hasselblad camera and 100W charging.",
@@ -156,7 +156,7 @@
       {
         "product_id": "PIXEL8P-010",
         "product_title": "Google Pixel 8 Pro (256GB, Obsidian)",
-        "product_image": "pixel-8-pro.jpg",
+        "product_image": "./src/assets/pixel-8-pro.jpg",
         "category": "Phones",
         "price": 999.00,
         "description": "AI-powered camera and Tensor G3 chip.",
@@ -173,7 +173,7 @@
       {
         "product_id": "XIAOMI14-011",
         "product_title": "Xiaomi 14 Ultra (512GB, Ceramic White)",
-        "product_image": "xiaomi-14-ultra.jpg",
+        "product_image": "./src/assets/xiaomi-14-ultra.webp",
         "category": "Phones",
         "price": 1199.00,
         "description": "Leica co-engineered camera with Snapdragon 8 Gen 3.",
@@ -190,7 +190,7 @@
       {
         "product_id": "MOTORAZR-012",
         "product_title": "Motorola Razr+ (2024, 256GB)",
-        "product_image": "motorola-razr-plus.jpg",
+        "product_image": "./src/assets/motorola-razr-plus.png",
         "category": "Phones",
         "price": 999.00,
         "description": "Foldable phone with 3.6\" external AMOLED display.",
@@ -207,7 +207,7 @@
       {
         "product_id": "GWA5-45MM-013",
         "product_title": "Samsung Galaxy Watch5 Pro (45mm, LTE)",
-        "product_image": "galaxy-watch5-pro.jpg",
+        "product_image": "./src/assets/galaxy-watch5-pro.png",
         "category": "Smart Watches",
         "price": 449.99,
         "description": "Premium smartwatch with sapphire glass and body composition analysis.",
@@ -223,7 +223,7 @@
       {
         "product_id": "APWU-45MM-014",
         "product_title": "Apple Watch Ultra 2 (49mm, Titanium)",
-        "product_image": "apple-watch-ultra-2.jpg",
+        "product_image": "./src/assets/apple-watch-ultra-2.jpeg",
         "category": "Smart Watches",
         "price": 799.00,
         "description": "Rugged smartwatch with dive-ready features and S9 chip.",
@@ -239,7 +239,7 @@
       {
         "product_id": "FITBIT-8-015",
         "product_title": "Fitbit Sense 2 (Advanced Health Tracking)",
-        "product_image": "fitbit-sense-2.jpg",
+        "product_image": "./src/assets/fitbit-sense-2.jpg",
         "category": "Smart Watches",
         "price": 299.95,
         "description": "Health-focused watch with stress management tools.",
@@ -255,7 +255,7 @@
       {
         "product_id": "GARMIN-965-016",
         "product_title": "Garmin Forerunner 965 (Multisport GPS)",
-        "product_image": "garmin-965.jpg",
+        "product_image": "./src/assets/garmin-965.webp",
         "category": "Smart Watches",
         "price": 599.99,
         "description": "Premium running watch with AMOLED display and maps.",
@@ -270,7 +270,7 @@
       {
         "product_id": "AMZFAL-6-017",
         "product_title": "Amazfit Falcon (Titanium, Rugged)",
-        "product_image": "amazfit-falcon.jpg",
+        "product_image": "./src/assets/amazfit-falcon.png",
         "category": "Smart Watches",
         "price": 499.99,
         "description": "Ultra-durable watch with dual-band GPS and 14-day battery.",
@@ -286,7 +286,7 @@
       {
         "product_id": "TICW5-018",
         "product_title": "TicWatch Pro 5 (Google Wear OS)",
-        "product_image": "ticwatch-pro-5.jpg",
+        "product_image": "./src/assets/ticwatch-pro-5.webp",
         "category": "Smart Watches",
         "price": 349.99,
         "description": "Dual-layer display with Snapdragon W5+ Gen 1 chip.",
@@ -302,7 +302,7 @@
       {
         "product_id": "APWU-30W-019",
         "product_title": "Anker 30W USB-C Fast Charger",
-        "product_image": "anker-30w-charger.jpg",
+        "product_image": "./src/assets/anker-30w-charger.webp",
         "category": "Chargers",
         "price": 19.99,
         "description": "Compact GaN charger for phones and laptops.",
@@ -316,7 +316,7 @@
       {
         "product_id": "APWU-140W-020",
         "product_title": "Apple 140W USB-C Power Adapter",
-        "product_image": "apple-140w-charger.jpg",
+        "product_image": "./src/assets/apple-140w-charger.jpeg",
         "category": "Chargers",
         "price": 99.00,
         "description": "Fast charging for MacBook Pro 16\" with MagSafe.",
@@ -330,7 +330,7 @@
       {
         "product_id": "SAM-45W-021",
         "product_title": "Samsung 45W Super Fast Charger",
-        "product_image": "samsung-45w-charger.jpg",
+        "product_image": "./src/assets/samsung-45w-charger.webp",
         "category": "Chargers",
         "price": 49.99,
         "description": "PPS-enabled charger for Galaxy S24 Ultra and laptops.",
@@ -344,7 +344,7 @@
       {
         "product_id": "UGREEN-100W-022",
         "product_title": "UGREEN 100W 4-Port GaN Charger",
-        "product_image": "ugreen-100w-charger.jpg",
+        "product_image": "./src/assets/ugreen-100w-charger.webp",
         "category": "Chargers",
         "price": 79.99,
         "description": "Charge 4 devices simultaneously with GaN tech.",
@@ -358,7 +358,7 @@
       {
         "product_id": "BELKIN-3IN1-023",
         "product_title": "Belkin 3-in-1 Wireless Charger (MagSafe)",
-        "product_image": "belkin-3in1-magsafe.jpg",
+        "product_image": "./src/assets/belkin-3in1-magsafe.webp",
         "category": "Chargers",
         "price": 149.95,
         "description": "Charge iPhone, AirPods, and Apple Watch together.",
@@ -372,7 +372,7 @@
       {
         "product_id": "RAV-65W-024",
         "product_title": "RAVPower 65W GaN Wall Charger",
-        "product_image": "ravpower-65w-gan.jpg",
+        "product_image": "./src/assets/ravpower-65w-gan.webp",
         "category": "Chargers",
         "price": 39.99,
         "description": "Ultra-compact charger for laptops and phones.",
@@ -386,7 +386,7 @@
       {
         "product_id": "PBANK-20K-025",
         "product_title": "RAVPower 20000mAh Power Bank",
-        "product_image": "ravpower-20000mah.jpg",
+        "product_image": "./src/assets/ravpower-20000mah.webp",
         "category": "Power Banks",
         "price": 49.99,
         "description": "High-capacity power bank with 18W PD charging.",
@@ -401,7 +401,7 @@
       {
         "product_id": "ANKE-PD-026",
         "product_title": "Anker 737 PowerCore 24K (140W)",
-        "product_image": "anker-737-powercore.jpg",
+        "product_image": "./src/assets/anker-737-powercore.jpg",
         "category": "Power Banks",
         "price": 179.99,
         "description": "Massive power bank to charge a laptop 1.5 times.",
@@ -416,7 +416,7 @@
       {
         "product_id": "MI-50W-027",
         "product_title": "Xiaomi 50W Power Bank 10000mAh",
-        "product_image": "xiaomi-50w-powerbank.jpg",
+        "product_image": "./src/assets/xiaomi-50w-powerbank.png",
         "category": "Power Banks",
         "price": 59.99,
         "description": "Compact power bank with 50W fast charging.",
@@ -431,7 +431,7 @@
       {
         "product_id": "ZENDURE-027",
         "product_title": "Zendure SuperTank Pro (100W, 26800mAh)",
-        "product_image": "zendure-supertank.jpg",
+        "product_image": "./src/assets/zendure-supertank.jpg",
         "category": "Power Banks",
         "price": 199.99,
         "description": "Airplane-approved power bank with digital display.",
@@ -441,12 +441,12 @@
           "input": "USB-C (100W)"
         },
         "availability": true,
-        "rating": 4.9
+        "rating": 3.9
       },
       {
         "product_id": "BELKIN-10K-028",
         "product_title": "Belkin 10000mAh Wireless Power Bank",
-        "product_image": "belkin-wireless-powerbank.jpg",
+        "product_image": "./src/assets/belkin-wireless-powerbank.jpeg",
         "category": "Power Banks",
         "price": 69.99,
         "description": "10W Qi wireless charging + 18W wired.",
@@ -461,7 +461,7 @@
       {
         "product_id": "ECOFLOW-029",
         "product_title": "EcoFlow 72000mAh Portable Power Station",
-        "product_image": "ecoflow-72000mah.jpg",
+        "product_image": "./src/assets/ecoflow-72000mah.jpg",
         "category": "Power Banks",
         "price": 499.99,
         "description": "Solar-compatible power station for outdoor use.",
