@@ -1,6 +1,5 @@
 import { useLoaderData, useParams } from "react-router";
 import { useEffect, useState } from "react";
-import { loadEnv } from "vite";
 
 const SinglePage = () => {
     const newData = useLoaderData().products;
