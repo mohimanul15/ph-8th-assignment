@@ -48,7 +48,7 @@
           "display": "13.3\" FHD (1920x1080) Touch",
           "weight": "2.8 lbs"
         },
-        "availability": true,
+        "availability": false,
         "rating": 4.5
       },
       {
@@ -99,7 +99,7 @@
           "display": "14\" FHD (1920x1080)",
           "weight": "2.3 lbs"
         },
-        "availability": true,
+        "availability": false,
         "rating": 4.4
       },
       {
@@ -167,7 +167,7 @@
           "storage": "256GB",
           "battery": "5050mAh (30W wired)"
         },
-        "availability": true,
+        "availability": false,
         "rating": 4.6
       },
       {
@@ -217,7 +217,7 @@
           "battery": "590mAh (2-day life)",
           "features": "GPS, ECG, Blood Pressure Monitor"
         },
-        "availability": true,
+        "availability": false,
         "rating": 4.6
       },
       {

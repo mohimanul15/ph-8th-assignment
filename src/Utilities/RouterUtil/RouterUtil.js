@@ -18,7 +18,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/products/:prodId',
-                loader: ({params}) =>fetch('/products.json'),
+                loader: () =>fetch('/products.json'),
                 Component: SinglePage
             },
             {

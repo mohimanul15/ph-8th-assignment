@@ -1,13 +1,16 @@
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import mainLogo from '../../assets/logo.jpg';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import './Header.css';
 import { IoCartOutline } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
-import { useEffect, useState } from 'react';
+import {useContext, useEffect, useState } from 'react';
+import { CartDataContext } from '../../App';
 
 const Header = ({colorPalete = 'black'}) => {
+
+    const {cartItem,wishItem} = useContext(CartDataContext);
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -27,11 +30,17 @@ const Header = ({colorPalete = 'black'}) => {
         <NavLink to='/dashboard'>Dashboard</NavLink>
     </>
 
+    // const cartItems = GetLocalStorageCart().length;
+    // const wishItems = GetLocalStorageWish().length;
+
+    // console.log(cartItems,wishItems);
+
 
 
     return (
-        <header className={`text-${mainPalete}`}>
+        <header className={`text-${mainPalete} ${mainPalete=='black'?'bg-white':''}`}>
             <div className='flex items-center justify-between container mx-auto'>
+                <Link to='/'>
                 <div className='flex items-center justify-center gap-1 flex-1/3'>
                     <img
                         src={mainLogo}
@@ -43,6 +52,7 @@ const Header = ({colorPalete = 'black'}) => {
                         Gadget Heaven
                     </h2>
                 </div>
+                </Link>
 
                 <div className='flex max-md:flex-row-reverse justify-around gap-2 flex-2/3'>
 
@@ -64,12 +74,12 @@ const Header = ({colorPalete = 'black'}) => {
                     <div className='flex items-center justify-center gap-3'>
                         <div className={`flex justify-center items-center w-8 h-8 relative outline-1 outline-${colorPalete=== 'black'?'gray-800':colorPalete} rounded-full`}>
                             <FaHeart className='w-5 h-auto'></FaHeart>
-                            <p className='absolute -top-2 -right-1.5 text-lg font-bold text-amber-500'>3</p>
+                            <p className='absolute -top-3 -right-1.5 text-sm font-light bg-amber-200 rounded-full px-1 text-black'>{wishItem}</p>
                         </div>
 
                         <div className={`flex justify-center items-center w-8 h-8 relative outline-1 outline-${colorPalete=== 'black'?'gray-800':colorPalete} rounded-full`}>
                             <IoCartOutline className='w-5 h-auto'></IoCartOutline>
-                            <p className='absolute -top-2 -right-1.5 text-lg font-bold text-amber-500'>2</p>
+                            <p className='absolute -top-3 -right-1.5 text-sm font-light bg-amber-200 rounded-full px-1 text-black'>{cartItem}</p>
                         </div>
                     </div>
 
