@@ -30,11 +30,6 @@ const Header = ({colorPalete = 'black'}) => {
         <NavLink to='/dashboard'>Dashboard</NavLink>
     </>
 
-    // const cartItems = GetLocalStorageCart().length;
-    // const wishItems = GetLocalStorageWish().length;
-
-    // console.log(cartItems,wishItems);
-
 
 
     return (

@@ -1,0 +1,13 @@
+.btn_toggle_active{
+    background-color: white;
+    color:#9538e2;
+    font-weight: 900;
+}
+
+.btn_toggle_inactive{
+    background-color: transparent;
+    color:white;
+    border-width: 2px;
+    border-color: white;
+    font-weight: 500;
+}
