@@ -11,14 +11,20 @@ function App() {
 
   const [cartItem, setCartItem] = useState(GetLocalStorageCart().length);
   const [wishItem, setWishItem] = useState(GetLocalStorageWish().length);
+  const [getTotal, setGetTotal] = useState(0);
 
+  useEffect(()=>{
+    setCartItem(GetLocalStorageCart().length);
+    setWishItem(GetLocalStorageWish().length);
+  })
+  
   const [title, setTitle] = useTitle('Gadget Heaven Home');
 
 
   return (
     <>
       <CartDataContext.Provider 
-        value={{cartItem,setCartItem,wishItem,setWishItem}}>
+        value={{cartItem,setCartItem,wishItem,setWishItem,getTotal,setGetTotal}}>
         {
           useLocation().pathname !== '/' ?
             <Header></Header> :

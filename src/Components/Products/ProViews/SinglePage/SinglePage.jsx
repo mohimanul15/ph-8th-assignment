@@ -2,13 +2,13 @@ import { useLoaderData, useParams } from "react-router";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
-import { GetLocalStorageCart, GetLocalStorageWish, SetLocalStorageCart, SetLocalStorageWish } from "../../../../Utilities/Cart/Cart";
+import { CalculateTotalInCart, GetLocalStorageCart, GetLocalStorageWish, SetLocalStorageCart, SetLocalStorageWish } from "../../../../Utilities/Cart/Cart";
 import { CartDataContext } from "../../../../App";
 import useTitle from "../../../../Utilities/CustomHook/useTitle";
 
 const SinglePage = () => {
 
-    const {setCartItem,setWishItem} = useContext(CartDataContext);
+    const { setCartItem, setWishItem, setGetTotal, getTotal} = useContext(CartDataContext);
 
     const newData = useLoaderData().products;
     const prop = useParams().prodId;
@@ -16,7 +16,7 @@ const SinglePage = () => {
     const currentProd = newData.find(prod => prod.product_id === prop);
 
     const {
-        product_id:p_id,
+        product_id: p_id,
         description: des,
         price,
         product_image: image,
@@ -32,7 +32,7 @@ const SinglePage = () => {
     let spec_data = [];
 
     for (const [key, value] of Object.entries(specification)) {
-        spec_data.push(<li key={key+'a'}>{key} : {value}</li>);
+        spec_data.push(<li key={key + 'a'}>{key} : {value}</li>);
     }
 
     const ratingInt = rating - 1;
@@ -42,11 +42,14 @@ const SinglePage = () => {
     let i = 0;
 
     while (i < 5) {
-        rateData.push(<input name="rating-1" key={i+'sd'} className={`mask mask-star bg-orange-400 ${ratingInt >= i ? 'opacity-100' : ''}`} aria-label={`${i + 1} star`} />);
+        rateData.push(<input name="rating-1" key={i + 'sd'} className={`mask mask-star bg-orange-400 ${ratingInt >= i ? 'opacity-100' : ''}`} aria-label={`${i + 1} star`} />);
         i++;
     }
 
-    const handleCartClick = pro_id =>{
+    const handleCartClick = pro_id => {
+
+        console.log(CalculateTotalInCart(newData) + price > 1000);
+
         SetLocalStorageCart(pro_id);
         const data = GetLocalStorageCart().length;
         setCartItem(data);
@@ -121,7 +124,7 @@ const SinglePage = () => {
 
                                 <div>
                                     <button className="bg-main flex items-center gap-2 py-3 px-5 rounded-4xl text-sm lg:text-lg font-bold text-white hover:animate-pulse"
-                                    onClick={()=>handleCartClick(p_id)}>
+                                        onClick={() => handleCartClick(p_id)}>
                                         Add To Cart
                                         <span><BsCart3 className="text-white font-bold" /></span>
                                     </button>
@@ -129,7 +132,7 @@ const SinglePage = () => {
 
                                 <div>
                                     <button className="border-2 border-[#09080F10] py-3 px-5 rounded-4xl"
-                                    onClick={()=>handleWishClick(p_id)}>
+                                        onClick={() => handleWishClick(p_id)}>
                                         <FaRegHeart />
                                     </button>
                                 </div>
