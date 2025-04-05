@@ -5,7 +5,7 @@
         "product_title": "Apple MacBook Pro 14\" M3 Chip 512GB SSD",
         "product_image": "./src/assets/macbook-pro-m3-14.png",
         "category": "Computers",
-        "price": 1599.00,
+        "price": 349.00,
         "description": "Professional laptop with M3 chip and Liquid Retina XDR display.",
         "specification": {
           "chip": "Apple M3 (8-core CPU, 10-core GPU)",
@@ -22,7 +22,7 @@
         "product_title": "Dell XPS 15 Laptop – 12th Gen Intel i7, 4K Touchscreen",
         "product_image": "./src/assets/dell-xps-15-2024.jpg",
         "category": "Computers",
-        "price": 1799.00,
+        "price": 479.00,
         "description": "Sleek design with InfinityEdge display and NVIDIA RTX GPU.",
         "specification": {
           "cpu": "Intel Core i7-12700H",
@@ -39,7 +39,7 @@
         "product_title": "HP EliteBook x360 13\" 2-in-1 Laptop",
         "product_image": "./src/assets/hp-elitebook-x360.webp",
         "category": "Computers",
-        "price": 1299.00,
+        "price": 279.00,
         "description": "Convertible business laptop with long battery life.",
         "specification": {
           "cpu": "Intel Core i5-1235U",
@@ -56,7 +56,7 @@
         "product_title": "Lenovo Legion 7 Gaming Laptop",
         "product_image": "./src/assets/lenovo-legion-7.webp",
         "category": "Computers",
-        "price": 1999.00,
+        "price": 249.00,
         "description": "High-performance gaming laptop with RGB keyboard.",
         "specification": {
           "cpu": "AMD Ryzen 9 7945HX",
@@ -73,7 +73,7 @@
         "product_title": "ASUS ZenBook 14 OLED",
         "product_image": "./src/assets/asus-zenbook-14.png",
         "category": "Computers",
-        "price": 1099.00,
+        "price": 309.00,
         "description": "Ultra-thin laptop with vibrant OLED display.",
         "specification": {
           "cpu": "Intel Core i7-1260P",
@@ -90,7 +90,7 @@
         "product_title": "Acer Swift 5 (2024)",
         "product_image": "./src/assets/acer-swift-5.png",
         "category": "Computers",
-        "price": 999.00,
+        "price": 299.00,
         "description": "Lightweight laptop with magnesium-aluminum chassis.",
         "specification": {
           "cpu": "Intel Core i5-1240P",
@@ -107,7 +107,7 @@
         "product_title": "Samsung Galaxy S24 Ultra (256GB, Titanium Black)",
         "product_image": "./src/assets/s24-ultra-black.jpeg",
         "category": "Phones",
-        "price": 1299.99,
+        "price": 129.99,
         "description": "Flagship phone with 200MP camera and Snapdragon 8 Gen 3.",
         "specification": {
           "display": "6.8\" Dynamic AMOLED 2X (1440x3088)",
@@ -124,7 +124,7 @@
         "product_title": "iPhone 15 Pro Max (1TB, Titanium)",
         "product_image": "./src/assets/iphone15-pro-max.jpg",
         "category": "Phones",
-        "price": 1599.00,
+        "price": 599.00,
         "description": "ProMotion display, A17 Pro chip, and titanium body.",
         "specification": {
           "display": "6.7\" Super Retina XDR (1290x2796)",
@@ -141,7 +141,7 @@
         "product_title": "OnePlus 11 5G (256GB, Black)",
         "product_image": "./src/assets/oneplus-11.webp",
         "category": "Phones",
-        "price": 699.00,
+        "price": 69.00,
         "description": "Flagship killer with Hasselblad camera and 100W charging.",
         "specification": {
           "display": "6.7\" AMOLED (1440x3216) 120Hz",
@@ -158,7 +158,7 @@
         "product_title": "Google Pixel 8 Pro (256GB, Obsidian)",
         "product_image": "./src/assets/pixel-8-pro.jpg",
         "category": "Phones",
-        "price": 999.00,
+        "price": 99.00,
         "description": "AI-powered camera and Tensor G3 chip.",
         "specification": {
           "display": "6.7\" LTPO OLED (1344x2992) 120Hz",
@@ -175,7 +175,7 @@
         "product_title": "Xiaomi 14 Ultra (512GB, Ceramic White)",
         "product_image": "./src/assets/xiaomi-14-ultra.webp",
         "category": "Phones",
-        "price": 1199.00,
+        "price": 199.00,
         "description": "Leica co-engineered camera with Snapdragon 8 Gen 3.",
         "specification": {
           "display": "6.73\" AMOLED (1440x3200) 120Hz",
@@ -192,7 +192,7 @@
         "product_title": "Motorola Razr+ (2024, 256GB)",
         "product_image": "./src/assets/motorola-razr-plus.png",
         "category": "Phones",
-        "price": 999.00,
+        "price": 99.00,
         "description": "Foldable phone with 3.6\" external AMOLED display.",
         "specification": {
           "display": "6.9\" FHD+ (1080x2640) Foldable LTPO",
@@ -209,7 +209,7 @@
         "product_title": "Samsung Galaxy Watch5 Pro (45mm, LTE)",
         "product_image": "./src/assets/galaxy-watch5-pro.png",
         "category": "Smart Watches",
-        "price": 449.99,
+        "price": 49.99,
         "description": "Premium smartwatch with sapphire glass and body composition analysis.",
         "specification": {
           "display": "1.4\" AMOLED (450x450)",
@@ -225,7 +225,7 @@
         "product_title": "Apple Watch Ultra 2 (49mm, Titanium)",
         "product_image": "./src/assets/apple-watch-ultra-2.jpeg",
         "category": "Smart Watches",
-        "price": 799.00,
+        "price": 79.00,
         "description": "Rugged smartwatch with dive-ready features and S9 chip.",
         "specification": {
           "display": "1.92\" LTPO OLED (502x410)",
@@ -241,7 +241,7 @@
         "product_title": "Fitbit Sense 2 (Advanced Health Tracking)",
         "product_image": "./src/assets/fitbit-sense-2.jpg",
         "category": "Smart Watches",
-        "price": 299.95,
+        "price": 29.95,
         "description": "Health-focused watch with stress management tools.",
         "specification": {
           "display": "1.58\" AMOLED (336x336)",
@@ -257,7 +257,7 @@
         "product_title": "Garmin Forerunner 965 (Multisport GPS)",
         "product_image": "./src/assets/garmin-965.webp",
         "category": "Smart Watches",
-        "price": 599.99,
+        "price": 199.99,
         "description": "Premium running watch with AMOLED display and maps.",
         "specification": {
           "display": "1.4\" AMOLED (454x454)",
@@ -272,7 +272,7 @@
         "product_title": "Amazfit Falcon (Titanium, Rugged)",
         "product_image": "./src/assets/amazfit-falcon.png",
         "category": "Smart Watches",
-        "price": 499.99,
+        "price": 99.99,
         "description": "Ultra-durable watch with dual-band GPS and 14-day battery.",
         "specification": {
           "display": "1.28\" AMOLED (416x416)",
@@ -288,7 +288,7 @@
         "product_title": "TicWatch Pro 5 (Google Wear OS)",
         "product_image": "./src/assets/ticwatch-pro-5.webp",
         "category": "Smart Watches",
-        "price": 349.99,
+        "price": 39.99,
         "description": "Dual-layer display with Snapdragon W5+ Gen 1 chip.",
         "specification": {
           "display": "1.43\" AMOLED (466x466) + FSTN",
@@ -360,7 +360,7 @@
         "product_title": "Belkin 3-in-1 Wireless Charger (MagSafe)",
         "product_image": "./src/assets/belkin-3in1-magsafe.webp",
         "category": "Chargers",
-        "price": 149.95,
+        "price": 14.95,
         "description": "Charge iPhone, AirPods, and Apple Watch together.",
         "specification": {
           "output": "15W (MagSafe), 5W (Watch/AirPods)",
@@ -403,7 +403,7 @@
         "product_title": "Anker 737 PowerCore 24K (140W)",
         "product_image": "./src/assets/anker-737-powercore.jpg",
         "category": "Power Banks",
-        "price": 179.99,
+        "price": 79.99,
         "description": "Massive power bank to charge a laptop 1.5 times.",
         "specification": {
           "capacity": "24000mAh",
@@ -463,7 +463,7 @@
         "product_title": "EcoFlow 72000mAh Portable Power Station",
         "product_image": "./src/assets/ecoflow-72000mah.jpg",
         "category": "Power Banks",
-        "price": 499.99,
+        "price": 49.99,
         "description": "Solar-compatible power station for outdoor use.",
         "specification": {
           "capacity": "72000mAh (256Wh)",

@@ -1,13 +1,22 @@
 import { useLoaderData } from "react-router";
 import useTitle from "../../../Utilities/CustomHook/useTitle";
-import { GetLocalStorageCart, UpdateCart } from "../../../Utilities/Cart/Cart";
+import { EmptyCart, GetLocalStorageCart, UpdateCart } from "../../../Utilities/Cart/Cart";
 import SingleCartItem from "./SingleCartItem/SingleCartItem";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartDataContext } from "../../../App";
+import { RemoveFromCartToast } from "../../../Utilities/ToastPop/ToastPop";
+import { Bounce, ToastContainer } from "react-toastify";
+import congrats from '../../../assets/Group.png';
 
 const Cart = () => {
 
-    useTitle('Dashboard -> Cart: Gadget Heaven');
+    const [title, setTitle] = useTitle('Dashboard -> Cart: Gadget Heaven');
+
+    const [isSorted, setIsSorted] = useState(false);
+
+    useEffect(() => {
+        setTitle('Dashboard -> Cart: Gadget Heaven')
+    })
 
     const { setCartItem } = useContext(CartDataContext);
 
@@ -35,15 +44,35 @@ const Cart = () => {
             return ele;
         })
 
-        // console.log(updateProductsInfo);
+        if (isSorted) {
+            updateProductsInfo = updateProductsInfo.sort((a, b) => {
+                return b.price - a.price;
+            })
+        }
 
+    }
+
+    const sortFunc = () => {
+        setIsSorted(!isSorted);
     }
 
     const RemoveFromCart = pro_id => {
         UpdateCart(pro_id);
 
         setCartItem(GetLocalStorageCart().length);
-        // console.log(p_id);
+
+        RemoveFromCartToast();
+    }
+
+    const handlePurcahseClick = () => {
+        cart_total>0?
+        document.getElementById('purchase_modal').showModal():
+        '';
+    }
+
+    const handleModalClose = () => {
+        EmptyCart();
+        setCartItem(GetLocalStorageCart().length);
     }
 
 
@@ -56,10 +85,13 @@ const Cart = () => {
                 </div>
 
                 <div className="flex items-center gap-3 flex-wrap">
-                    <h1 className="font-bold text-lg lg:text-2xl">Total Cost: ${cart_total}</h1>
+                    <h1 className="font-bold text-lg lg:text-2xl">Total Cost: ${cart_total.toFixed(3)}</h1>
 
                     <div className="border-2 w-fit rounded-4xl border-purple-600">
-                        <button className="px-2 py-1 lg:px-5 lg:py-3 text-main text-base lg:text-lg font-semibold flex gap-3">
+                        <button
+                            className="px-2 py-1 lg:px-5 lg:py-3 text-main text-base lg:text-lg font-semibold flex gap-3"
+                            onClick={() => sortFunc()}>
+
                             Sort by Price
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_13_2554)">
@@ -82,7 +114,9 @@ const Cart = () => {
                         </button>
                     </div>
 
-                    <button className="rounded-4xl px-3 py-1.5 lg:px-6 lg:py-3 bg-main text-base text-white lg:text-lg font-medium flex gap-3">
+                    <button 
+                        className={`rounded-4xl px-3 py-1.5 lg:px-6 lg:py-3 ${cart_total>0?'bg-main':'bg-gray-400'} text-base text-white lg:text-lg font-medium flex gap-3`}
+                        onClick={()=>handlePurcahseClick()}>
                         Purchase
                     </button>
                 </div>
@@ -95,6 +129,34 @@ const Cart = () => {
                         ''
                 }
             </div>
+            
+            <dialog id="purchase_modal" className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box place-items-center">
+                    <img src={congrats} alt="" />
+                    <h3 className="font-bold text-base md:text-lg mt-3">Purchase Successful</h3>
+                    <p className="py-4">Thanks for purchase.</p>
+                    <p>Total: $ {cart_total.toFixed(3)}</p>
+                    <div className="modal-action w-full">
+                        <form method="dialog" className="w-full">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn w-full rounded-2xl" onClick={()=>handleModalClose()}>Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}></ToastContainer>
         </div>
     );
 };

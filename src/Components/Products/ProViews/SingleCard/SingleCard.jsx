@@ -34,7 +34,7 @@ const SingleCard = ({ prodList }) => {
 
                 <h3 className="font-semibold text-base md:text-lg lg:text-2xl text-text_secondary">{name}</h3>
 
-                <h2 className="font-medium text-sm md:text-base lg:text-xl text-text_secondary opacity-60">Price: {price} TK</h2>
+                <h2 className="font-medium text-sm md:text-base lg:text-xl text-text_secondary opacity-60">Price: $ {price} </h2>
 
             </div>
 

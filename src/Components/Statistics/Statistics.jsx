@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import useTitle from "../../Utilities/CustomHook/useTitle";
 
 const Statistics = () => {
 
-    useTitle('Statistics: Gadget Heaven');
+    const [title,setTitle] = useTitle('Statistics: Gadget Heaven');
+
+    useEffect(()=>{
+        setTitle('Statistics: Gadget Heaven');
+    })
 
     return (
         <div>

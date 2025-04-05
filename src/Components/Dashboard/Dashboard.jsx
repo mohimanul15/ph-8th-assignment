@@ -33,13 +33,13 @@ const Dashboard = () => {
                     </p>
                 </div>
 
-                <div className="text-lg flex mt-4 gap-4 justify-center">
+                <div className="text-base md:text-lg flex mt-4 gap-4 justify-center flex-wrap">
                     <div>
-                        <button className={`rounded-4xl px-16 py-3 ${select ? 'btn_toggle_active' : 'btn_toggle_inactive'}`} onClick={()=>handleBtnClick(true)}>Cart</button>
+                        <button className={`rounded-4xl px-5 sm:px-16 py-1 sm:py-3 ${select ? 'btn_toggle_active' : 'btn_toggle_inactive'}`} onClick={()=>handleBtnClick(true)}>Cart</button>
                     </div>
 
                     <div>
-                        <button className={`rounded-4xl px-16 py-3 ${!select ? 'btn_toggle_active' : 'btn_toggle_inactive'}`} onClick={()=>handleBtnClick(false)}>Wishlist</button>
+                        <button className={`rounded-4xl px-5 sm:px-16 py-1 sm:py-3 ${!select ? 'btn_toggle_active' : 'btn_toggle_inactive'}`} onClick={()=>handleBtnClick(false)}>Wishlist</button>
                     </div>
                 </div>
             </div>

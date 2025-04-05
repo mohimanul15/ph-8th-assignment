@@ -5,10 +5,14 @@ import { useContext, useEffect, useState } from "react";
 import { CalculateTotalInCart, GetLocalStorageCart, GetLocalStorageWish, SetLocalStorageCart, SetLocalStorageWish } from "../../../../Utilities/Cart/Cart";
 import { CartDataContext } from "../../../../App";
 import useTitle from "../../../../Utilities/CustomHook/useTitle";
+import { AddedToCartToast, AddedToYourWishlistToast, AlreadyInWishToast, Amount1000WarnToast, CannotAddToCartToast } from "../../../../Utilities/ToastPop/ToastPop";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const SinglePage = () => {
 
-    const { setCartItem, setWishItem, setGetTotal, getTotal} = useContext(CartDataContext);
+    const [isWish, setIsWish] = useState(false);
+
+    const { setCartItem, setWishItem, setGetTotal, getTotal } = useContext(CartDataContext);
 
     const newData = useLoaderData().products;
     const prop = useParams().prodId;
@@ -48,18 +52,46 @@ const SinglePage = () => {
 
     const handleCartClick = pro_id => {
 
-        console.log(CalculateTotalInCart(newData) + price > 1000);
-
-        SetLocalStorageCart(pro_id);
-        const data = GetLocalStorageCart().length;
-        setCartItem(data);
+        // console.log(CalculateTotalInCart(newData) + price > 1000);
+        if(CalculateTotalInCart(newData) + price > 1000){
+            Amount1000WarnToast();
+        }
+        else if (isAvai) {
+            SetLocalStorageCart(pro_id);
+            const data = GetLocalStorageCart().length;
+            setCartItem(data);
+            AddedToCartToast();
+        }else{
+            CannotAddToCartToast();
+        }
     }
 
     const handleWishClick = pro_id => {
-        SetLocalStorageWish(pro_id);
-        const data = GetLocalStorageWish().length;
-        setWishItem(data);
+        if (isWish) {
+            AlreadyInWishToast();
+        } else {
+            SetLocalStorageWish(pro_id);
+            const data = GetLocalStorageWish().length;
+            setWishItem(data);
+            AddedToYourWishlistToast();
+            setIsWish(true);
+        }
     }
+
+
+    useEffect(() => {
+        const wishList = GetLocalStorageWish();
+
+        if (wishList.length > 0 &&
+            wishList.includes(p_id)) {
+
+            setIsWish(true);
+
+        }
+
+    }, [])
+
+    // console.log(isWish);
 
     useTitle(title);
 
@@ -123,7 +155,8 @@ const SinglePage = () => {
                             <div className="flex gap-3 flex-wrap mt-2">
 
                                 <div>
-                                    <button className="bg-main flex items-center gap-2 py-3 px-5 rounded-4xl text-sm lg:text-lg font-bold text-white hover:animate-pulse"
+                                    <button 
+                                        className={`${isAvai?'bg-main':'bg-gray-500'} flex items-center gap-2 py-3 px-5 rounded-4xl text-sm lg:text-lg font-bold text-white hover:animate-pulse`}
                                         onClick={() => handleCartClick(p_id)}>
                                         Add To Cart
                                         <span><BsCart3 className="text-white font-bold" /></span>
@@ -131,9 +164,10 @@ const SinglePage = () => {
                                 </div>
 
                                 <div>
-                                    <button className="border-2 border-[#09080F10] py-3 px-5 rounded-4xl"
+                                    <button
+                                        className={`border-2 border-[#09080F10] py-3 px-5 rounded-4xl`}
                                         onClick={() => handleWishClick(p_id)}>
-                                        <FaRegHeart />
+                                        <FaRegHeart className={`${isWish ? 'text-gray-400' : ''}`} />
                                     </button>
                                 </div>
 
@@ -144,6 +178,18 @@ const SinglePage = () => {
 
                 </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}></ToastContainer>
         </>
     );
 };

@@ -89,4 +89,26 @@ function UpdateCart(p_id){
     }
 }
 
-export { SetLocalStorageCart, GetLocalStorageCart, SetLocalStorageWish, GetLocalStorageWish, CalculateTotalInCart,UpdateCart}
+function UpdateWish(p_id){
+    const wishPrev = GetLocalStorageWish();
+
+    if(wishPrev.length>1){
+        const newWish = wishPrev.filter(ele=> ele !== p_id);
+        localStorage.setItem('Wish', JSON.stringify(newWish));
+    }else{
+        localStorage.removeItem('Wish');
+    }
+}
+
+function EmptyCart(){
+    localStorage.removeItem('Cart');
+}
+
+export { SetLocalStorageCart, 
+        GetLocalStorageCart, 
+        SetLocalStorageWish, 
+        GetLocalStorageWish, 
+        CalculateTotalInCart,
+        UpdateCart,
+        UpdateWish,
+        EmptyCart}
