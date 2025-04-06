@@ -8,6 +8,7 @@ import Cart from "../../Components/Dashboard/Cart/Cart.jsx";
 import Wish from "../../Components/Dashboard/Wish/Wish.jsx";
 import { Component } from "react";
 import ErrorPage from "../../Components/ErrorPage/ErrorPage.jsx";
+import Contact from "../../Components/Contact/Contact.jsx";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
                 path: '/statistics',
                 loader: ()=>fetch('/products.json'),
                 Component: Statistics
+            },
+            {
+                path:'/contact',
+                Component:Contact
             },
             {
                 path: '/dashboard',

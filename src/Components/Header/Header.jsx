@@ -28,6 +28,8 @@ const Header = ({ colorPalete = 'black' }) => {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/statistics'>Statistics</NavLink>
         <NavLink to='/dashboard'>Dashboard</NavLink>
+        <NavLink to='/contact'>Contact</NavLink>
+
     </>
 
 
@@ -59,7 +61,7 @@ const Header = ({ colorPalete = 'black' }) => {
                                 <IoClose className='md:hidden font-bold text-xl' onClick={handleIsOpen}></IoClose> :
                                 <RxHamburgerMenu className='md:hidden font-bold text-xl' onClick={handleIsOpen}></RxHamburgerMenu>
                         }
-                        <div className={`absolute text-sm flex flex-col md:hidden bg-slate-900 px-6 py-4 rounded-xl shadow-2xs text-slate-200 -left-28 duration-1000 gap-2 ${isOpen ? 'top-10' : '-top-40'}`}>
+                        <div className={`absolute text-sm flex flex-col md:hidden bg-slate-900 px-6 py-4 rounded-xl shadow-2xs text-slate-200 -left-28 duration-1000 gap-2 ${isOpen ? 'top-10' : '-top-60'}`}>
                             {menuList}
                         </div>
 
