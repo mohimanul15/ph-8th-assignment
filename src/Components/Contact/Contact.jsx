@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import useTitle from "../../Utilities/CustomHook/useTitle";
-
-useTitle
 
 const Contact = () => {
 
-    useTitle('Contact: Gadget Heaven');    
+    const [title,setTitle] = useTitle('Contact: Gadget Heaven');
+    
+    useEffect(()=>{
+        setTitle('Contact: Gadget Heaven');
+    },title)
 
     return (
         <div>

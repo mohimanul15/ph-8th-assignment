@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useTitle from "../../Utilities/CustomHook/useTitle";
 import './Dashboard.css';
 import { Outlet, useNavigate } from "react-router";
 
 const Dashboard = () => {
     const navigate = useNavigate();
-    useTitle('Dashboard: Gadget Heaven');
+    const [title,setTitle]= useTitle('Dashboard: Gadget Heaven');
 
     const [select, setSelect] = useState(true);
 
@@ -19,6 +19,10 @@ const Dashboard = () => {
 
         navigate(page);
     }
+
+    useEffect(()=>{
+        setTitle('Dashboard: Gadget Heaven');
+    },title)
 
 
 
