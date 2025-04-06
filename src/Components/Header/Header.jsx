@@ -35,19 +35,21 @@ const Header = ({ colorPalete = 'black' }) => {
     return (
         <header className={`text-${mainPalete} ${mainPalete == 'black' ? 'bg-white' : ''}`}>
             <div className='flex items-center justify-between container mx-auto'>
-                <Link to='/'>
-                    <div className='flex items-center justify-center gap-1 flex-1/3'>
-                        <img
-                            src={mainLogo}
-                            alt="Website Logo"
-                            className='max-w-24 md:max-w-32 mix-blend-multiply' />
+                <div className='flex-1/3'>
+                    <Link to='/'>
+                        <div className='flex items-center justify-center gap-1'>
+                            <img
+                                src={mainLogo}
+                                alt="Website Logo"
+                                className='max-w-24 md:max-w-32 mix-blend-multiply' />
 
-                        <h2
-                            className='font-bold text-base max-sm:hidden md:text-xl'>
-                            Gadget Heaven
-                        </h2>
-                    </div>
-                </Link>
+                            <h2
+                                className='font-bold text-base max-sm:hidden md:text-xl'>
+                                Gadget Heaven
+                            </h2>
+                        </div>
+                    </Link>
+                </div>
 
                 <div className='flex max-md:flex-row-reverse justify-around gap-2 flex-2/3'>
 
