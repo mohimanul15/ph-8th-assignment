@@ -47,6 +47,8 @@ This document outlines the functional and non-functional requirements for the de
 4.1: useState - State Management
 4.2: useEffect - side Effect 
 4.3: useContext - Access context
+4.4: useLocation - for page suffix
+4.5: useNavigate - Page change
 
 ### 5. Virtual DOM
 React optimizes rendering by comparing the Virtual DOM with the real DOM and applying minimal updates.
