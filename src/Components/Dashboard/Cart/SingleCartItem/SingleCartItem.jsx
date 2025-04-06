@@ -24,7 +24,7 @@ const SingleCartItem = ({cart_item,RemoveFromCart}) => {
                 
                 <div className="flex gap-4 items-center">
                     <div>
-                        <img src={window.location.origin + image.substring(1)} className="w-24 h-auto rounded-xl"/>
+                        <img src={image} className="w-24 h-auto rounded-xl"/>
                     </div>
 
                     <div className="text-start">

@@ -109,7 +109,7 @@ const SinglePage = () => {
 
                     <div className="flex flex-col sm:flex-row gap-6">
                         <div className="flex-1/3 bg-[#ececec] rounded-2xl place-content-center">
-                            <img src={window.location.origin + image.substring(1)} alt="Product Image" className="mix-blend-multiply mx-auto" />
+                            <img src={image} alt="Product Image" className="mix-blend-multiply mx-auto" />
                         </div>
 
                         <div className="flex flex-col flex-2/3 gap-4">
